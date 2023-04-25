@@ -1,6 +1,12 @@
 ﻿string[] ImputArray(int length)
 {
-
+    string[] array = new string[length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"Введите {i+1} элемент массива: ");
+        array[i] = Console.ReadLine();
+    }
+    return array;
 }
 
 string[] CheckArray(string[] array)
