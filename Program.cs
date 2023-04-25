@@ -26,8 +26,6 @@ return result;
 
 int CheckNumbersArray(string[] array)
 { 
-int CheckNumbersArray(string[] array)
-{ 
     int count = 0;
 for(int i = 0;  i < array.Length; i++)
     { 
@@ -47,3 +45,8 @@ if(length < 0)
     length = int.Parse(Console.ReadLine()!);
 }
 
+string[] array;
+string[] result;
+array = ImputArray(length);
+result = CheckArray(array);
+Console.WriteLine($"Массив: [{string.Join(", ", result)}]");
